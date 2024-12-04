@@ -13,6 +13,7 @@
   {
     "id": 1733350615875,
     "title": "test",
-    "description": "test"
+    "description": "test",
+    "isCompleted": true
   }
 ]
