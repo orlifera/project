@@ -800,6 +800,11 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.btn:disabled {
+  background-color: var(--accent-200);
+  color: grey;
+  cursor: not-allowed;
+}
 
 #wish-title {
   padding: .5em;
