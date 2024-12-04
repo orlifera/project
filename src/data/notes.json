@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "28 Agosto 2024"
+  },
+  {
+    "id": "2",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "2 settembre 2024"
+  },
+  {
+    "id": "3",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "8 Settembre 2024"
+  },
+  {
+    "id": "4",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "24 Settembre 2024"
+  },
+  {
+    "id": "5",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "6 Ottobre 2024"
+  },
+  {
+    "id": "6",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "8 Ottobre 2024"
+  },
+  {
+    "id": "7",
+    "title": "This is a note",
+    "content": "This is a note",
+    "date": "11 Novembre 2024"
+  }
+]
