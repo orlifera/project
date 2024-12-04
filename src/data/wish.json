@@ -3,5 +3,10 @@
     "id": 1733350445384,
     "title": "Test Wish",
     "description": "Test Wish"
+  },
+  {
+    "id": 1733350458269,
+    "title": "Completed",
+    "description": "This is a completed wish"
   }
 ]
