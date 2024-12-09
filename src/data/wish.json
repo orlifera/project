@@ -2,7 +2,8 @@
   {
     "id": 1733350445384,
     "title": "Test Wish",
-    "description": "Test Wish"
+    "description": "Test Wish",
+    "isCompleted": true
   },
   {
     "id": 1733350458269,
