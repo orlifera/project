@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Movie } from '../../types';
 import { GlobalContext } from '../../context/GlobalState';
+import { Link } from 'react-router-dom';
 
 interface MovieCardProps {
     movie: Movie;
@@ -26,6 +27,9 @@ const MovieControls: React.FC<MovieCardProps> = ({ movie, type }) => {
                         onClick={() => removeFromWatchlist && removeFromWatchlist(movie.id)}>
                         <i className="fa-fw fa fa-times"></i>
                     </button>
+                    <Link to={`/movie/${movie.id}`} className="details-link">
+                        More Details
+                    </Link>
                 </>
             }
             {type === 'watched' &&
@@ -35,6 +39,10 @@ const MovieControls: React.FC<MovieCardProps> = ({ movie, type }) => {
                             onClick={() => removeFromWatched && removeFromWatched(movie.id)}>
                             <i className="fa-fw far fa-eye-slash"></i>
                         </button>
+                        <Link to={`/movie/${encodeURIComponent(movie.title.replace(/\s+/g, '-').toLowerCase())}`} className="details-link">
+                            More Details
+                        </Link>
+
                     </>
                 )
             }

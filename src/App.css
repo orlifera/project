@@ -572,8 +572,10 @@ body {
 
 .controls button {
   background-color: var(--primary-100);
-  color: var(--text-100);
+  color: var(--bg-300);
   border: none;
+  min-width: 12em;
+  width: 20%;
   padding: .5em;
   cursor: pointer;
   margin: .5em;
@@ -588,6 +590,12 @@ body {
 .controls button:active {
   background-color: var(--text-100);
   color: var(--primary-100);
+}
+
+.controls button:hover {
+  background-color: var(--primary-200);
+  color: var(--bg-300);
+  transition: .3s;
 }
 
 .movie-list {
@@ -677,7 +685,53 @@ body {
   margin: .5em;
 }
 
+.details-link {
+  color: var(--primary-100);
+  text-decoration: none;
+  background-color: var(--bg-300);
+  padding: .5em;
+  border-radius: 5px;
+}
 
+.details-link:hover {
+  color: var(--primary-200);
+  text-decoration: underline;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.movie-title {
+  font-size: 2em;
+  margin: .5em;
+  color: var(--primary-200);
+}
+
+.plot {
+  width: 80%;
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+.actors {
+  font-size: 1.5em;
+  color: var(--primary-100);
+}
+
+.actor-list {
+
+  margin: 1em;
+}
+
+.actor-list li {
+  font-size: 1.2em;
+}
 
 .gallery {
   display: flex;

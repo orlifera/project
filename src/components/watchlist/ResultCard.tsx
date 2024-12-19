@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalState'
 import { Movie } from '../../types'
+import { Link } from 'react-router-dom'
 
 const ResultCard: React.FC<{ movie: Movie }> = ({ movie }) => {
 
@@ -46,6 +47,10 @@ const ResultCard: React.FC<{ movie: Movie }> = ({ movie }) => {
                 >
                     Add to Watched
                 </button>
+                <Link to={`/movie/${encodeURIComponent(movie.title.replace(/\s+/g, '-').toLowerCase())}`} className="details-link">
+                    More Details
+                </Link>
+
             </div>
         </div>
     )

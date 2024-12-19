@@ -15,6 +15,7 @@ import { GlobalProvider } from './context/GlobalState.tsx'
 import Gallery from './components/Gallery.tsx';
 import NavSwitcher from './components/NavSwitcher.tsx';
 import MobileNavSwitcher from './components/MobileNavSwitcher.tsx';
+import MovieDetails from './components/watchlist/MovieDetails.tsx';
 
 
 const App: React.FC = () => {
@@ -89,6 +90,8 @@ const App: React.FC = () => {
               <Route path="watched" element={<Watched />} />
               <Route path="add" element={<AddMovie />} />
             </Route>
+            <Route path="movie/:title" element={<MovieDetails />} />
+
 
 
             <Route path="*" element={<div>404: Not Found</div>} />
