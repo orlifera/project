@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">Random Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/orlifera/project/image?language=1&amp;name=1&amp;owner=1&amp;theme=Dark" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">Small website made with Typescript and React using the Vite package. It's a project made to test my skills and use for the first time APIs and Helper files. It features a note section where you can add chunk of text via JSON (the ability to add them via GUI and not modifying the JSON each time is in the works); a Gallery that uses yet-another-react-lightbox; a watchlist that uses API Calls to TMDB to search and add movie to said watchlist (as of now its only LocalStorage); A wishlist that saves the wishes on a JSON files and updates it dynamically using GitHub as backend.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 Demo</h2>
 
-## Expanding the ESLint configuration
+[https://watchlist-gallery.netlify.app](https://watchlist-gallery.netlify.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  
+  
+<h2>🧐 Features</h2>
 
-- Configure the top-level `parserOptions` property like this:
+Here're some of the project's best features:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+*   Movie watchlist
+*   Wishlist
+*   Notes Page
+*   Gallery
+
+<h2>Next Features</h2>
+
+*   User Auth
+*   Notes updating via GUI
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. open terminal</p>
+
+<p>2. enter the folder or path you desire</p>
+
+```
+cd desired/path
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<p>3. clone repo</p>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+git clone git@github.com/orlifera/project
+```
+
+<p>4. run it locally</p>
+
+```
+npm run dev
+```
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Typescript
+*   React
+*   Vite
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3fe17b19-f244-4019-bee3-43cf16eb7ba0/deploy-status)](https://app.netlify.com/sites/watchlist-gallery/deploys)
